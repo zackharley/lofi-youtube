@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #e2cdb1;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+  color: #3b3b3b;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+}
+
+header {
+  margin: 20px 0;
+}
+
+.logo {
+  text-decoration: none;
+  color: inherit;
+  align-self: center;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.channel-container {
+  min-width: 300px;
+  max-width: 700px;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: #e0ba86;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.channel-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.channel-header-divider {
+  height: 10px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+ul {
+  margin-top: 10px;
+  padding: 0;
+}
+
+li {
+  height: 30px;
+}
+li > a {
+  text-decoration: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+
+.video-pagination-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.made-by {
+  margin-bottom: 40px;
+}
+
+.prev-page,
+.next-page {
+  cursor: pointer;
+}
+
+.prev-page {
+  margin-right: 20px;
+}
+.next-page {
+  margin-left: 20px;
+}
